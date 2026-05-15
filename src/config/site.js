@@ -23,7 +23,7 @@ export const siteConfig = {
     title: "Soluciones computacionales",
     titleHighlight: "a tu medida",
     subtitle:
-      "Desde una memoria USB hasta servidores para IA y proyectos empresariales, en Compulink disenamos, instalamos y damos soporte con un plan claro para ti.",
+      "Desde una memoria USB hasta servidores para IA y proyectos empresariales, en Compulink diseñamos, instalamos y damos soporte con un plan claro para ti.",
     ctaPrimary: "Solicitar asesoria",
     ctaSecondary: "Ver servicios",
     // Enlace del boton principal. Puedes poner una URL de Calendly o Google Calendar.
@@ -139,7 +139,7 @@ export const siteConfig = {
       {
         question: "Manejan soluciones de servidores e IA?",
         answer:
-          "Si. Disenamos soluciones escalables para analitica, automatizacion e inteligencia artificial segun tu objetivo.",
+          "Sí. Diseñamos soluciones escalables para analitica, automatizacion e inteligencia artificial segun tu objetivo.",
       },
       {
         question: "Como inicio una cotizacion?",
