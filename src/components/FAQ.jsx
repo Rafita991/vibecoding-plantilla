@@ -7,14 +7,14 @@ function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-slate-700">
       <button
         className="w-full py-5 flex items-center justify-between text-left"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-base font-medium text-gray-900">{question}</span>
+        <span className="text-base font-medium text-white">{question}</span>
         <svg
-          className={`w-5 h-5 text-gray-500 shrink-0 ml-4 transition-transform ${
+          className={`w-5 h-5 text-green-300 shrink-0 ml-4 transition-transform ${
             isOpen ? "rotate-180" : ""
           }`}
           fill="none"
@@ -30,7 +30,7 @@ function FAQItem({ question, answer }) {
         </svg>
       </button>
       {isOpen && (
-        <p className="pb-5 text-gray-600 leading-relaxed">{answer}</p>
+        <p className="pb-5 text-slate-300 leading-relaxed">{answer}</p>
       )}
     </div>
   );
@@ -40,17 +40,17 @@ export default function FAQ() {
   const { heading, subheading, items } = siteConfig.faq;
 
   return (
-    <section id="faq" className="py-20 px-6 bg-gray-50">
+    <section id="faq" className="py-24 px-6 bg-slate-950">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
             {heading}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-slate-300">
             {subheading}
           </p>
         </div>
-        <div>
+        <div className="rounded-2xl border border-slate-700 bg-slate-900/70 px-6 neon-glow">
           {items.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}

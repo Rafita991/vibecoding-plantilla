@@ -80,13 +80,13 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-20 px-6">
+    <section id="contacto" className="py-24 px-6 bg-slate-900">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
             {heading}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-slate-300">
             {subheading}
           </p>
           {schedulingUrl && (
@@ -94,7 +94,7 @@ export default function ContactForm() {
               href={schedulingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 px-6 py-2.5 border border-indigo-600 text-indigo-600 font-medium rounded-full hover:bg-indigo-50 transition-colors text-sm"
+              className="inline-block mt-4 px-6 py-2.5 border border-green-400 text-green-300 font-medium rounded-full hover:bg-green-400/10 transition-colors text-sm"
             >
               {schedulingCta}
             </a>
@@ -104,11 +104,11 @@ export default function ContactForm() {
         <form
           onSubmit={handleSubmit}
           noValidate
-          className="bg-white border border-gray-200 rounded-2xl p-8 space-y-6"
+          className="bg-slate-950 border border-slate-700 rounded-2xl p-8 space-y-6 shadow-sm neon-glow"
         >
           {/* Nombre */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="name" className="block text-sm font-medium text-slate-200 mb-2">
               Nombre
             </label>
             <input
@@ -118,8 +118,8 @@ export default function ContactForm() {
               value={form.name}
               onChange={handleChange}
               placeholder={formConfig.namePlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition ${
-                errors.name ? "border-red-400 bg-red-50" : "border-gray-300"
+              className={`w-full px-4 py-3 border rounded-xl bg-slate-900 text-slate-100 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition ${
+                errors.name ? "border-red-400 bg-red-950/40" : "border-slate-600"
               }`}
             />
             {errors.name && (
@@ -129,7 +129,7 @@ export default function ContactForm() {
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="email" className="block text-sm font-medium text-slate-200 mb-2">
               Email
             </label>
             <input
@@ -139,8 +139,8 @@ export default function ContactForm() {
               value={form.email}
               onChange={handleChange}
               placeholder={formConfig.emailPlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition ${
-                errors.email ? "border-red-400 bg-red-50" : "border-gray-300"
+              className={`w-full px-4 py-3 border rounded-xl bg-slate-900 text-slate-100 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition ${
+                errors.email ? "border-red-400 bg-red-950/40" : "border-slate-600"
               }`}
             />
             {errors.email && (
@@ -150,10 +150,10 @@ export default function ContactForm() {
 
           {/* Telefono */}
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="phone" className="block text-sm font-medium text-slate-200 mb-2">
               Telefono
               {!formConfig.phoneRequired && (
-                <span className="ml-1.5 text-gray-400 font-normal">(opcional)</span>
+                <span className="ml-1.5 text-slate-400 font-normal">(opcional)</span>
               )}
             </label>
             <input
@@ -163,8 +163,8 @@ export default function ContactForm() {
               value={form.phone}
               onChange={handleChange}
               placeholder={formConfig.phonePlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition ${
-                errors.phone ? "border-red-400 bg-red-50" : "border-gray-300"
+              className={`w-full px-4 py-3 border rounded-xl bg-slate-900 text-slate-100 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition ${
+                errors.phone ? "border-red-400 bg-red-950/40" : "border-slate-600"
               }`}
             />
             {errors.phone && (
@@ -174,7 +174,7 @@ export default function ContactForm() {
 
           {/* Mensaje */}
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="message" className="block text-sm font-medium text-slate-200 mb-2">
               Mensaje
             </label>
             <textarea
@@ -184,8 +184,8 @@ export default function ContactForm() {
               value={form.message}
               onChange={handleChange}
               placeholder={formConfig.messagePlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition resize-none ${
-                errors.message ? "border-red-400 bg-red-50" : "border-gray-300"
+              className={`w-full px-4 py-3 border rounded-xl bg-slate-900 text-slate-100 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent transition resize-none ${
+                errors.message ? "border-red-400 bg-red-950/40" : "border-slate-600"
               }`}
             />
             {errors.message && (
@@ -196,7 +196,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full py-3.5 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="hover-float w-full py-3.5 bg-green-500 text-slate-950 font-semibold rounded-full hover:bg-green-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === "loading" ? formConfig.sendingButton : formConfig.submitButton}
           </button>

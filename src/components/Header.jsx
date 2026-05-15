@@ -9,9 +9,9 @@ export default function Header() {
   const { links } = siteConfig.nav;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#hero" className="text-xl font-bold text-gray-900">
+        <a href="#inicio" className="text-xl font-bold tracking-tight text-white">
           {name}
         </a>
 
@@ -21,7 +21,7 @@ export default function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                className="text-sm text-slate-300 hover:text-green-300 transition-colors"
               >
                 {link.label}
               </a>
@@ -31,7 +31,7 @@ export default function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-gray-600"
+          className="md:hidden p-2 text-slate-300"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -47,12 +47,12 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <ul className="md:hidden bg-white border-b border-gray-100 px-6 pb-4 space-y-3">
+        <ul className="md:hidden bg-slate-900 border-b border-slate-800 px-6 pb-4 space-y-3">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                className="block text-sm text-slate-300 hover:text-green-300 transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}

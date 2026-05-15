@@ -10,22 +10,22 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   // INFORMACION DEL NEGOCIO
   // ─────────────────────────────────────────────
-  name: "VibeCoding",
-  tagline: "La plantilla perfecta para lanzar tu idea al mundo.",
+  name: "Compulink",
+  tagline: "Tecnologia confiable a la medida de cada cliente.",
   description:
-    "Rapido, moderno y listo para personalizar a tu gusto.",
+    "Servicios computacionales en Chihuahua y en linea: hardware, software, desarrollo e infraestructura para proyectos de cualquier escala.",
 
   // ─────────────────────────────────────────────
   // SECCION HERO (la primera pantalla que ven los visitantes)
   // ─────────────────────────────────────────────
   hero: {
-    badge: "Bienvenido a tu nuevo proyecto",
-    title: "Construye algo",
-    titleHighlight: "increible",
+    badge: "Chihuahua, Mexico + Atencion en linea",
+    title: "Soluciones computacionales",
+    titleHighlight: "a tu medida",
     subtitle:
-      "La plantilla perfecta para lanzar tu idea al mundo. Rapido, moderno y listo para personalizar a tu gusto.",
-    ctaPrimary: "Empezar ahora",
-    ctaSecondary: "Ver mas",
+      "Desde una memoria USB hasta servidores para IA y proyectos empresariales, en Compulink disenamos, instalamos y damos soporte con un plan claro para ti.",
+    ctaPrimary: "Solicitar asesoria",
+    ctaSecondary: "Ver servicios",
     // Enlace del boton principal. Puedes poner una URL de Calendly o Google Calendar.
     // Ejemplo Calendly: "https://calendly.com/tu-usuario/30min"
     // Ejemplo Google Calendar: "https://calendar.google.com/calendar/appointments/..."
@@ -37,26 +37,27 @@ export const siteConfig = {
   // BENEFICIOS / FEATURES (seccion de caracteristicas)
   // ─────────────────────────────────────────────
   features: {
-    heading: "Todo lo que necesitas para lanzar",
-    subheading: "Caracteristicas disenadas para ayudarte a crecer.",
+    heading: "Servicios reales para necesidades reales",
+    subheading:
+      "Atendemos desde tareas cotidianas del hogar hasta implementaciones para empresas y gobierno.",
     items: [
       {
         icon: "lightning",
-        title: "Rapido y eficiente",
+        title: "Respuesta agil y clara",
         description:
-          "Optimizado para velocidad. Tu sitio cargara en un instante y tus usuarios lo amaran.",
+          "Te explicamos opciones sin enredos y resolvemos con tiempos definidos para que no detengas tu operacion.",
       },
       {
         icon: "mobile",
-        title: "Diseno responsive",
+        title: "Hardware y software",
         description:
-          "Se ve perfecto en cualquier dispositivo: celular, tablet o computadora.",
+          "Venta, actualizacion y soporte de equipo, licencias y sistemas para uso personal, comercial o institucional.",
       },
       {
         icon: "settings",
-        title: "Facil de personalizar",
+        title: "Proyectos a la medida",
         description:
-          "Cambia colores, textos e imagenes facilmente desde un solo archivo de configuracion.",
+          "Planeamos contigo desde cero: infraestructura, automatizacion y soluciones de alto rendimiento, incluyendo IA.",
       },
     ],
   },
@@ -65,49 +66,49 @@ export const siteConfig = {
   // PRECIOS (planes de pago)
   // ─────────────────────────────────────────────
   pricing: {
-    heading: "Precios simples y transparentes",
+    heading: "Planes de servicio orientativos",
     subheading:
-      "Elige el plan que mejor se adapte a tus necesidades. Sin costos ocultos.",
+      "Cada proyecto se cotiza segun alcance, pero estos paquetes te ayudan a ubicar una ruta inicial.",
     plans: [
       {
-        name: "Basico",
-        price: "$0",
-        period: "/mes",
-        description: "Perfecto para empezar",
+        name: "Esencial",
+        price: "$1,499",
+        period: " MXN",
+        description: "Soporte puntual para hogar y micro negocio",
         features: [
-          "1 proyecto",
-          "Soporte por email",
-          "Actualizaciones basicas",
+          "Diagnostico y recomendacion tecnica",
+          "Mantenimiento preventivo basico",
+          "Soporte remoto en horario laboral",
         ],
-        cta: "Empezar gratis",
+        cta: "Quiero este plan",
         highlighted: false,
       },
       {
-        name: "Pro",
-        price: "$29",
-        period: "/mes",
-        description: "Para crecer tu negocio",
+        name: "Profesional",
+        price: "$5,900",
+        period: " MXN",
+        description: "Operacion continua para pymes",
         features: [
-          "Proyectos ilimitados",
-          "Soporte prioritario",
-          "Todas las funcionalidades",
-          "Analiticas avanzadas",
+          "Implementacion de hardware y software",
+          "Soporte prioritario y seguimiento",
+          "Respaldo y buenas practicas de seguridad",
+          "Acompanamiento para escalar infraestructura",
         ],
-        cta: "Empezar ahora",
+        cta: "Solicitar propuesta",
         highlighted: true,
       },
       {
-        name: "Enterprise",
-        price: "$99",
-        period: "/mes",
-        description: "Para equipos grandes",
+        name: "Institucional",
+        price: "A medida",
+        period: "",
+        description: "Para industria, corporativo y gobierno",
         features: [
-          "Todo lo de Pro",
-          "Soporte dedicado 24/7",
-          "Integraciones custom",
-          "SLA garantizado",
+          "Arquitectura de servidores y soluciones IA",
+          "Integraciones y despliegues especializados",
+          "Mesa de ayuda con acuerdos de servicio",
+          "Plan de continuidad operativa",
         ],
-        cta: "Contactar ventas",
+        cta: "Hablar con un especialista",
         highlighted: false,
       },
     ],
@@ -118,32 +119,32 @@ export const siteConfig = {
   // ─────────────────────────────────────────────
   faq: {
     heading: "Preguntas frecuentes",
-    subheading: "Resolvemos tus dudas mas comunes.",
+    subheading: "Te respondemos de forma directa para que decidas con seguridad.",
     items: [
       {
-        question: "Como puedo empezar a usar la plantilla?",
+        question: "No soy experto en tecnologia, aun asi me pueden ayudar?",
         answer:
-          "Solo necesitas clonar el repositorio, instalar las dependencias con npm install y ejecutar npm run dev para verla en tu computadora.",
+          "Si. Traducimos lo tecnico a pasos claros y te recomendamos solo lo que realmente necesitas.",
       },
       {
-        question: "Necesito saber programar?",
+        question: "Atienden solo empresas grandes?",
         answer:
-          "No necesariamente. Puedes personalizar textos, colores e imagenes sin tocar codigo complejo. Solo edita el archivo src/config/site.js.",
+          "No. Trabajamos desde necesidades del hogar hasta proyectos empresariales y gubernamentales.",
       },
       {
-        question: "Puedo usar mi propio dominio?",
+        question: "Pueden vender equipo e instalarlo?",
         answer:
-          "Si. Una vez que despliegues tu sitio en Vercel o cualquier otro hosting, puedes conectar tu dominio personalizado facilmente.",
+          "Si. Te apoyamos con seleccion de hardware, instalacion y puesta a punto para que funcione desde el primer dia.",
       },
       {
-        question: "Que metodos de pago aceptan?",
+        question: "Manejan soluciones de servidores e IA?",
         answer:
-          "Aceptamos tarjetas de credito y debito a traves de nuestra plataforma de pago segura.",
+          "Si. Disenamos soluciones escalables para analitica, automatizacion e inteligencia artificial segun tu objetivo.",
       },
       {
-        question: "Ofrecen soporte tecnico?",
+        question: "Como inicio una cotizacion?",
         answer:
-          "Si. Todos los planes incluyen soporte por email. Los planes Pro y Enterprise tienen soporte prioritario.",
+          "Envia tu necesidad por el formulario y te contactamos para definir alcance, tiempos y propuesta.",
       },
     ],
   },
@@ -152,31 +153,31 @@ export const siteConfig = {
   // SECCION DE CONTACTO
   // ─────────────────────────────────────────────
   contact: {
-    heading: "Contactanos",
+    heading: "Hablemos de tu proyecto",
     subheading:
-      "Envianos un mensaje y te responderemos lo antes posible.",
+      "Cuentanos que necesitas y en Compulink te proponemos una ruta clara, sin tecnicismos innecesarios.",
     // URL para agendar una cita (Calendly o Google Calendar)
     // Si no tienes, deja el valor vacio: ""
     schedulingUrl: "",
     schedulingCta: "Agendar una llamada",
     form: {
-      namePlaceholder: "Tu nombre",
-      emailPlaceholder: "tu@email.com",
+      namePlaceholder: "Tu nombre completo",
+      emailPlaceholder: "nombre@empresa.com",
       // Telefono es opcional. Cambia phoneRequired a true si quieres hacerlo obligatorio.
       phonePlaceholder: "Tu numero de telefono (opcional)",
       phoneRequired: false,
-      messagePlaceholder: "Escribe tu mensaje aqui...",
-      submitButton: "Enviar mensaje",
-      sendingButton: "Enviando...",
+      messagePlaceholder: "Describe brevemente que necesitas resolver...",
+      submitButton: "Enviar solicitud",
+      sendingButton: "Enviando solicitud...",
       successMessage:
-        "Mensaje enviado correctamente. Revisa tu email.",
+        "Gracias. Tu solicitud fue enviada correctamente.",
       errorMessage:
-        "Hubo un error al enviar. Intentalo de nuevo.",
+        "No se pudo enviar en este momento. Intentalo de nuevo.",
     },
     // Datos de contacto opcionales para mostrar en el footer o sidebar
-    email: "hola@vibecoding.com",
-    phone: "",
-    address: "",
+    email: "hola@compulink.mx",
+    phone: "+52 614 000 0000",
+    address: "Chihuahua, Mexico",
   },
 
   // ─────────────────────────────────────────────
@@ -185,8 +186,8 @@ export const siteConfig = {
   nav: {
     links: [
       { label: "Inicio", href: "#inicio" },
-      { label: "Features", href: "#features" },
-      { label: "Precios", href: "#precios" },
+      { label: "Servicios", href: "#features" },
+      { label: "Planes", href: "#precios" },
       { label: "FAQ", href: "#faq" },
       { label: "Contacto", href: "#contacto" },
     ],
@@ -196,7 +197,7 @@ export const siteConfig = {
   // FOOTER
   // ─────────────────────────────────────────────
   footer: {
-    tagline: "Hecho con Next.js y mucho cafe.",
+    tagline: "Tecnologia que trabaja para ti, no al reves.",
     links: [
       { label: "Inicio", href: "#inicio" },
       { label: "Features", href: "#features" },
@@ -210,8 +211,8 @@ export const siteConfig = {
   // EMAIL (notificaciones automaticas al recibir un contacto)
   // ─────────────────────────────────────────────
   email: {
-    subject: "Recibimos tu mensaje",
-    teamSignature: "El equipo de VibeCoding",
+    subject: "Recibimos tu solicitud en Compulink",
+    teamSignature: "Equipo Compulink",
     // El remitente del email. Debe coincidir con tu dominio verificado en Resend.
     from: "onboarding@resend.dev",
   },
@@ -222,10 +223,10 @@ export const siteConfig = {
   // Estos valores son documentacion. Para cambiar colores en Tailwind v4,
   // edita el archivo src/app/globals.css y modifica las variables CSS.
   colors: {
-    primary: "indigo-600",    // Color principal (botones, acentos)
-    secondary: "gray-900",    // Color de textos principales
-    accent: "indigo-50",      // Fondos suaves y badges
-    background: "white",      // Fondo general
+    primary: "blue-700",      // Color principal (botones, acentos)
+    secondary: "slate-900",   // Color de textos principales
+    accent: "sky-50",         // Fondos suaves y badges
+    background: "slate-50",   // Fondo general
   },
 
   // ─────────────────────────────────────────────
@@ -248,8 +249,8 @@ export const siteConfig = {
   // METADATOS SEO (lo que aparece en Google y redes sociales)
   // ─────────────────────────────────────────────
   metadata: {
-    title: "VibeCoding - Tu plantilla para lanzar rapido",
+    title: "Compulink | Servicios computacionales a la medida",
     description:
-      "La plantilla perfecta para lanzar tu idea al mundo. Rapido, moderno y listo para personalizar.",
+      "Compulink ofrece soluciones de hardware, software, desarrollo e infraestructura en Chihuahua y en linea para personas, empresas y gobierno.",
   },
 };

@@ -3,3 +3,56 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
 }
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+.neon-glow {
+  box-shadow: 0 0 0 1px rgba(74, 222, 128, 0.35), 0 0 25px rgba(74, 222, 128, 0.2);
+}
+
+.neon-text {
+  text-shadow: 0 0 18px rgba(74, 222, 128, 0.5);
+}
+
+.hover-float {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.hover-float:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes laserPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scaleX(1.08);
+  }
+}
+
+@keyframes flameFlicker {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(-5px) scale(1.08);
+    opacity: 0.8;
+  }
+}
+
+.laser-line {
+  animation: laserPulse 1.8s ease-in-out infinite;
+}
+
+.flame-core {
+  animation: flameFlicker 1.3s ease-in-out infinite;
+}
