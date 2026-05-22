@@ -22,13 +22,13 @@ export default function Features() {
   const { heading, subheading, items } = siteConfig.features;
 
   return (
-    <section id="features" className="py-24 px-6 bg-slate-950">
+    <section id="features" className="py-24 px-6 bg-slate-950 light:bg-slate-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4 light:text-slate-900">
             {heading}
           </h2>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto light:text-slate-600">
             {subheading}
           </p>
         </div>
@@ -36,15 +36,15 @@ export default function Features() {
           {items.map((feature, index) => (
             <div
               key={index}
-              className="hover-float neon-glow bg-slate-900/80 p-8 rounded-2xl border border-green-400/20"
+              className="hover-float neon-glow bg-slate-900/80 p-8 rounded-2xl border border-green-400/20 light:bg-white light:border-green-200 light:shadow-md"
             >
-              <div className="w-12 h-12 bg-green-400/15 text-green-300 rounded-xl flex items-center justify-center mb-5">
+              <div className="w-12 h-12 bg-green-400/15 text-green-300 rounded-xl flex items-center justify-center mb-5 light:bg-green-100 light:text-green-700">
                 {iconMap[feature.icon] ?? iconMap.settings}
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3 light:text-slate-900">
                 {feature.title}
               </h3>
-              <p className="text-slate-300 leading-relaxed">
+              <p className="text-slate-300 leading-relaxed light:text-slate-600">
                 {feature.description}
               </p>
             </div>

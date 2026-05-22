@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant light (&:where(.light, .light *));
+
 @theme inline {
   --font-sans: var(--font-geist-sans);
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 antialiased;
+  @apply bg-slate-950 text-slate-100 antialiased light:bg-slate-50 light:text-slate-900;
 }
 
 .neon-glow {

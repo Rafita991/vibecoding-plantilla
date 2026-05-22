@@ -181,6 +181,14 @@ export const siteConfig = {
   },
 
   // ─────────────────────────────────────────────
+  // TEMA (boton claro / oscuro en el header)
+  // ─────────────────────────────────────────────
+  theme: {
+    labelLight: "Activar modo claro",
+    labelDark: "Activar modo oscuro",
+  },
+
+  // ─────────────────────────────────────────────
   // NAVEGACION
   // ─────────────────────────────────────────────
   nav: {
