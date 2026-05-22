@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import PaymentButton from "@/components/PaymentButton";
 
 export default function Pricing() {
   const { heading, subheading, plans } = siteConfig.pricing;
@@ -80,6 +81,7 @@ export default function Pricing() {
               >
                 {plan.cta}
               </a>
+              <PaymentButton className="w-full mt-3" />
             </div>
           ))}
         </div>

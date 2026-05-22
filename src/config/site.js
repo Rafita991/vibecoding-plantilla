@@ -241,15 +241,12 @@ export const siteConfig = {
   // BOTON DE PAGO (PayPal)
   // ─────────────────────────────────────────────
   payment: {
-    // Cambia enabled a true cuando tengas tu cuenta de PayPal lista
-    enabled: false,
-    // Tu nombre de usuario de PayPal.me
-    // Para obtenerlo: ve a paypal.com > Perfil > Configura tu link PayPal.me
-    // Ejemplo: si tu link es paypal.me/juanperez, escribe "juanperez"
-    paypalMeUsername: "",
-    // Monto sugerido en dolares. Pon 0 para que el comprador elija cuanto pagar.
+    enabled: true,
+    // Link: https://paypal.me/sophieHolmoc — solo el usuario, sin paypal.me/
+    paypalMeUsername: "sophieHolmoc",
+    // 0 = el cliente elige el monto en PayPal (recomendado con precios "A medida" o MXN)
     defaultAmount: 0,
-    currency: "USD",
+    currency: "MXN",
     buttonText: "Pagar con PayPal",
   },
 
